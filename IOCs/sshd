@@ -33,7 +33,29 @@ sequence by user.id, host.id
      process.name == "sshd" and 
      not cidrmatch(destination.ip, "10.0.0.0/8", "192.168.0.0/16", "172.16.0.0/12")]
 
-
+type: eql
+language: eql
+query: |
+  network where
+    process.name == "sshd" and
+    destination.domain != null
+risk_score: 50
+severity: medium
+rule_id: sshd-proxy-detection
+name: SSHD Making Outbound Connections (Per-Domain)
+description: Detects outbound network activity from sshd processes to domain names, which may indicate proxying behavior.
+interval: 5m
+from: now-60m
+tags: [network, linux, ssh, proxy]
+threat: []
+references: []
+suppression:
+  group_by: 
+    - host.name
+    - server.name
+    - process.id
+    - destination.domain
+  duration: 60m
 
 
 
