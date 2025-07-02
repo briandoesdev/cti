@@ -1,0 +1,25 @@
+Chrome Spawning Suspicious Process (Shellcode Payload)
+process where 
+  event.action == "start" and 
+  process.parent.name == "chrome.exe" and 
+  process.name in ("powershell.exe", "cmd.exe", "wscript.exe", "cscript.exe", "mshta.exe", "rundll32.exe", "regsvr32.exe", "wmic.exe", "schtasks.exe")
+
+Chrome Writing to Memory of Another Process (Process Injection)
+process where 
+  event.code == "10" and 
+  process.name == "chrome.exe" and 
+  process.Ext.api == "NtWriteVirtualMemory"
+
+Chrome Loading DLLs from Unusual Paths
+library where 
+  process.name == "chrome.exe" and 
+  dll.path != null and 
+  dll.path : ("*\\AppData\\*", "*\\Temp\\*", "*\\Downloads\\*", "*\\Users\\Public\\*")
+
+Sequence: Chrome Spawns Suspicious Process + Network Activity
+sequence by host.id, process.parent.entity_id
+  [process where process.name == "chrome.exe"]
+  [process where process.name in ("powershell.exe", "cmd.exe", "rundll32.exe")]
+  [network where destination.port >= 1024 and network.direction == "outbound"]
+
+
