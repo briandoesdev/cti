@@ -1,0 +1,41 @@
+Detection: sshd Making a Network Connection
+network where 
+  process.name == "sshd" and 
+  network.direction == "outbound"
+
+network where 
+  process.name == "sshd" and 
+  destination.ip != null and 
+  destination.port >= 1024
+
+network where 
+  process.name == "sshd" and 
+  destination.ip not in ("127.0.0.1", "::1") and 
+  (destination.port < 22 or destination.port > 22)
+
+sshd Making Unexpected Outbound Connections
+network where
+  process.name == "sshd" and 
+  destination.ip != null and 
+  not destination.ip in ("127.0.0.1", "::1", "169.254.169.254") and 
+  destination.port >= 80
+
+network where
+  process.name == "sshd" and 
+  not destination.ip in ("127.0.0.1", "::1") and
+  not cidrmatch(destination.ip, "10.0.0.0/8", "192.168.0.0/16", "172.16.0.0/12")
+
+and destination.port in (80, 443, 8080, 8443)
+
+sequence by user.id, host.id
+  [process where process.name == "sshd"]
+  [network where 
+     process.name == "sshd" and 
+     not cidrmatch(destination.ip, "10.0.0.0/8", "192.168.0.0/16", "172.16.0.0/12")]
+
+
+
+
+
+
+
