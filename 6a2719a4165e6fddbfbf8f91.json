@@ -1,0 +1,367 @@
+{
+  "id": "bundle--9d0a6735-f227-4016-a89b-8eb18ea52c8d",
+  "objects": [
+    {
+      "created": "2026-06-08T19:36:04.335Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "Threat actors are increasingly leveraging the global interest in artificial intelligence by impersonating popular AI platforms such as ChatGPT, Copilot, DeepSeek, and Claude in social engineering campaigns. These operations span phishing attacks, malvertising, and search engine optimization-driven tactics that ultimately lead to credential theft, financial fraud, or malware infections. Observed campaigns include ChatGPT-themed phishing collecting credit card data targeting South Africa, Claude-themed adversary-in-the-middle attacks harvesting credentials and access tokens, malvertising campaigns distributing Vidar stealer through fake AI plugin downloads, and fraudulent DeepSeek V4 installers on GitHub. The initial access broker Storm-3075 has been identified employing AI-themed malvertising, while the financially motivated actor Fox Tempest provides malware-signing-as-a-service to enhance payload legitimacy. These campaigns combine traditional social engineering tactics with AI branding to improve success...",
+      "id": "report--9d0a6735-f227-4016-a89b-8eb18ea52c8d",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-09T08:47:24.589Z",
+      "name": "AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--e1913e44-2b2f-40f9-bf73-b874cd2676fd",
+        "indicator--a167e363-033e-460e-8214-abf4c5687fb4",
+        "indicator--c674ee62-aae5-4a72-beab-54dc756d8823",
+        "indicator--0728294f-b41e-4d7a-a0ee-daa4c2285a0b",
+        "indicator--51e7ed67-5392-42a8-ba5b-57399c375599",
+        "indicator--1ef3a82a-aa55-4b74-a821-2dffd3fe7e93",
+        "indicator--f8cbb203-6b6f-411f-aa85-9bc42b321669",
+        "indicator--15097735-2bd3-46d2-a7e5-51f06a87710e",
+        "indicator--61adb2f8-50c8-422d-bfca-12e4c7557de3",
+        "indicator--9ff3fb38-e80b-40b9-85d3-1071d5665707",
+        "indicator--e0a34938-f226-43d7-ae4a-794fe05d2186",
+        "indicator--1d2af471-fbd3-44d7-9c9b-6d0b5ff921c8",
+        "indicator--d749d912-0969-4d18-8f7e-d309f238cc78",
+        "indicator--4f523f0b-d5d6-46a5-a170-9361d375bce6",
+        "indicator--3adda3ab-ed2f-453d-b619-d391f4f78c42",
+        "indicator--109e8c09-264c-431c-acbe-dd9fbc669d45",
+        "indicator--9ab242c3-37d1-4ab5-bd4d-543e016d68b6",
+        "threat-actor--5f0c2693-3109-4218-82c5-26cfed8788dd"
+      ],
+      "published": "2026-06-08T19:36:04.335Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-08T19:36:04.335Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-08T19:36:04.335Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--e1913e44-2b2f-40f9-bf73-b874cd2676fd",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-1' = '4f5c5b3ef45cfff7721754487a86aeff9a2e6e32']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--a167e363-033e-460e-8214-abf4c5687fb4",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '0a26238f6c516de5885457c93042531aa59bc206a9537cebf5267cedc6c68531']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--c674ee62-aae5-4a72-beab-54dc756d8823",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '25270cc429ada8028b5b33220ed412c47907ecceea7377d608fac5af01bed56a']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--0728294f-b41e-4d7a-a0ee-daa4c2285a0b",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '5455341ed1bbe75a664fca2dd0794c508e1874f75360253a7ff5bc119bc92d80']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--51e7ed67-5392-42a8-ba5b-57399c375599",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '56d722b0331bf0aaa86bb37483486c6dff6ad9427fc473ed7c3226c21a9bdd23']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--1ef3a82a-aa55-4b74-a821-2dffd3fe7e93",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '791efb555eefb7215e96659a1353a97416743b66bdd72705493129c64057d40e']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--f8cbb203-6b6f-411f-aa85-9bc42b321669",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '8610d4fb0ec5b525071c2aaec4df0f8fcbb3673aba58a7e1959fc44e83c0e2ca']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--15097735-2bd3-46d2-a7e5-51f06a87710e",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = '99231deb373997364381d1eb513d2d42231d418c3a2db9007c5af9bd56ab9371']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--61adb2f8-50c8-422d-bfca-12e4c7557de3",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[file:hashes.'SHA-256' = 'c7c5072df9f83f4c440a5c3bb4be1d5f6c67bbf78f196406ca20d27b43b975b8']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--9ff3fb38-e80b-40b9-85d3-1071d5665707",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[url:value = 'http://dash.awaydouble.org/0v2auth']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--e0a34938-f226-43d7-ae4a-794fe05d2186",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'brokeapt.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--1d2af471-fbd3-44d7-9c9b-6d0b5ff921c8",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'legendarytrendsbay.shop']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--d749d912-0969-4d18-8f7e-d309f238cc78",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'dash.awaydouble.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--4f523f0b-d5d6-46a5-a170-9361d375bce6",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'grupoconstat.bitrix24.com.br']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--3adda3ab-ed2f-453d-b619-d391f4f78c42",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'pan.rongtv.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--109e8c09-264c-431c-acbe-dd9fbc669d45",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'pan.ssffaa19.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "created": "2026-06-08T19:36:05.000Z",
+      "description": "",
+      "id": "indicator--9ab242c3-37d1-4ab5-bd4d-543e016d68b6",
+      "labels": [],
+      "modified": "2026-06-08T19:36:05.000Z",
+      "name": "OTX pulse_name=AI brands as bait: How threat actors are using the AI hype in social engineering",
+      "pattern": "[domain-name:value = 'servicing.pureplantcravings.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T19:36:05.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-08T19:36:04.335Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--5f0c2693-3109-4218-82c5-26cfed8788dd",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-08T19:36:04.335Z",
+      "name": "Storm-3075",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

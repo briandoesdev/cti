@@ -1,0 +1,157 @@
+{
+  "id": "bundle--89fc98fd-be7d-432d-a724-c052699f8475",
+  "objects": [
+    {
+      "created": "2026-06-07T11:21:59.196Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "A coordinated PyPI compromise campaign involving 37 malicious wheel artifacts across 19 packages was detected, utilizing Python startup hooks to execute credential-stealing payloads. The attack leverages .pth files for automatic execution during Python interpreter startup, downloads the Bun JavaScript runtime, and runs obfuscated JavaScript payloads. The malware targets high-value developer and CI/CD credentials including GitHub, npm, PyPI, cloud providers (AWS, GCP, Azure), Kubernetes, Vault, SSH keys, and AI tool tokens. This represents a PyPI branch of the Shai-Hulud/Miasma campaign family, using a Hades-themed variant for GitHub exfiltration. Compromised packages included established bioinformatics tools with significant download counts, stemming from apparent maintainer account takeover. The payload employs multi-layer obfuscation, AES-GCM encryption, and exfiltrates data through GitHub repositories with distinctive markers. The campaign demonstrates cross-runtime attack capabilities and ecosystem-spe...",
+      "id": "report--89fc98fd-be7d-432d-a724-c052699f8475",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-08T09:12:36.161Z",
+      "name": "Miasma Worm Campaign Spreads with New PyPI Wave",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--c39ee7d1-9208-4006-8b39-62daa1bea189",
+        "indicator--fae14dea-76fa-43f6-baf4-cf18b9f2f253",
+        "indicator--130210f7-740d-44ce-906f-e9d8677f915b",
+        "threat-actor--6f834965-1c57-4a44-a5ab-a80d30dd3fd5"
+      ],
+      "published": "2026-06-07T11:21:59.196Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-07T11:21:59.196Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-07T11:21:59.196Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-07T11:22:00.000Z",
+      "description": "",
+      "id": "indicator--c39ee7d1-9208-4006-8b39-62daa1bea189",
+      "labels": [],
+      "modified": "2026-06-07T11:22:00.000Z",
+      "name": "OTX pulse_name=Miasma Worm Campaign Spreads with New PyPI Wave",
+      "pattern": "[file:hashes.'SHA-256' = 'c539766062555d47716f8432e73adbe3a0c0c954a0b6c4005017a668975e275c']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-07T11:22:00.000Z"
+    },
+    {
+      "created": "2026-06-07T11:22:00.000Z",
+      "description": "",
+      "id": "indicator--fae14dea-76fa-43f6-baf4-cf18b9f2f253",
+      "labels": [],
+      "modified": "2026-06-07T11:22:00.000Z",
+      "name": "OTX pulse_name=Miasma Worm Campaign Spreads with New PyPI Wave",
+      "pattern": "[file:hashes.'SHA-256' = 'dc48b09b2a5954f7ff79ab8a2fd80202bd3b59c08c7cdbc6025aa923cb4c0efe']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-07T11:22:00.000Z"
+    },
+    {
+      "created": "2026-06-07T11:22:00.000Z",
+      "description": "",
+      "id": "indicator--130210f7-740d-44ce-906f-e9d8677f915b",
+      "labels": [],
+      "modified": "2026-06-07T11:22:00.000Z",
+      "name": "OTX pulse_name=Miasma Worm Campaign Spreads with New PyPI Wave",
+      "pattern": "[file:hashes.'SHA-256' = 'e1342a80d4b5e83d2c7c22e1e0aaa95f2d88e3dbf0d853a4994b180c93a4b17d']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-07T11:22:00.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-07T11:21:59.196Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--6f834965-1c57-4a44-a5ab-a80d30dd3fd5",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-07T11:21:59.196Z",
+      "name": "Shai-Hulud",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

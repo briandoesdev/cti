@@ -1,0 +1,174 @@
+{
+  "id": "bundle--a9d2ca35-9219-406e-aa62-8c60bdf47905",
+  "objects": [
+    {
+      "created": "2026-06-04T13:57:26.399Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "This analysis examines Gamaredon's (UAC-0010, Armagedon) advanced espionage operations targeting Ukrainian government, military, and critical infrastructure. The FSB-operated group deploys GammaSteel, a sophisticated stealer operating almost entirely from memory using Windows DPAPI encryption and storing 71 distinct payload functions in the HKCU\\Printers registry key. The malware employs three concurrent data acquisition mechanisms: timed drive scans, USB monitoring for air-gapped systems, and real-time file surveillance. Exfiltration occurs via legitimate S3-compatible cloud storage (Tebi.io) with fallback to operator-controlled servers. The infection chain extensively uses VBScript for evasion, Dead Drop Resolvers on platforms like Telegram and Mastodon for C2 configuration, and includes bidirectional backdoor capabilities enabling arbitrary remote code execution. Infrastructure demonstrates high automation with servers rotated approximately every 24 hours.",
+      "id": "report--a9d2ca35-9219-406e-aa62-8c60bdf47905",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-05T08:46:33.421Z",
+      "name": "Matryoshka #3/3: Gamaredon's Gammasteel Infostealer",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--8d860f1a-409d-4b7b-900e-b6d1488ab290",
+        "indicator--ef24f4f8-f8ad-4f07-81bd-fa1c9d77b0f5",
+        "indicator--f191c6d9-962d-42e6-9848-16ee6d4c35eb",
+        "indicator--f191c6d9-962d-42e6-9848-16ee6d4c35eb",
+        "threat-actor--6cb931ff-51d0-4a4d-b40d-0f66f5e52033"
+      ],
+      "published": "2026-06-04T13:57:26.399Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-04T13:57:26.399Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-04T13:57:26.399Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-04T13:57:27.000Z",
+      "description": "",
+      "id": "indicator--8d860f1a-409d-4b7b-900e-b6d1488ab290",
+      "labels": [],
+      "modified": "2026-06-04T13:57:27.000Z",
+      "name": "OTX pulse_name=Matryoshka #3/3: Gamaredon's Gammasteel Infostealer",
+      "pattern": "[url:value = 'https://justsstop.ru/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T13:57:27.000Z"
+    },
+    {
+      "created": "2026-06-04T13:57:27.000Z",
+      "description": "",
+      "id": "indicator--ef24f4f8-f8ad-4f07-81bd-fa1c9d77b0f5",
+      "labels": [],
+      "modified": "2026-06-04T13:57:27.000Z",
+      "name": "OTX pulse_name=Matryoshka #3/3: Gamaredon's Gammasteel Infostealer",
+      "pattern": "[domain-name:value = 'justsstop.ru']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T13:57:27.000Z"
+    },
+    {
+      "created": "2026-06-04T14:23:14.000Z",
+      "description": "",
+      "id": "indicator--f191c6d9-962d-42e6-9848-16ee6d4c35eb",
+      "labels": [],
+      "modified": "2026-06-04T14:23:14.000Z",
+      "name": "OTX pulse_name=Matryoshka #3/3: Gamaredon's Gammasteel Infostealer",
+      "pattern": "[ipv4-addr:value = '165.22.170.129']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T14:23:14.000Z",
+      "valid_until": "2026-07-04T00:00:00.000Z"
+    },
+    {
+      "created": "2026-06-04T14:23:23.000Z",
+      "description": "",
+      "id": "indicator--f191c6d9-962d-42e6-9848-16ee6d4c35eb",
+      "labels": [],
+      "modified": "2026-06-04T14:23:23.000Z",
+      "name": "OTX pulse_name=Matryoshka #3/3: Gamaredon's Gammasteel Infostealer",
+      "pattern": "[ipv4-addr:value = '165.22.170.129']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T14:23:23.000Z",
+      "valid_until": "2026-07-04T00:00:00.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-04T13:57:26.399Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--6cb931ff-51d0-4a4d-b40d-0f66f5e52033",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-04T13:57:26.399Z",
+      "name": "Gamaredon",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

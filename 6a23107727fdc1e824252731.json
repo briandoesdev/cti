@@ -1,0 +1,236 @@
+{
+  "id": "bundle--1b19701e-2fde-4b6f-b420-5f65023047da",
+  "objects": [
+    {
+      "created": "2026-06-05T18:07:51.399Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "A newly identified China-linked espionage cluster designated OP-512 has been discovered targeting Internet Information Services (IIS) servers through advanced AI-driven detection. The operation involves deploying a sophisticated custom web shell framework consisting of three components: a file manager with command-and-control notification channel and two cryptographically authenticated command handlers. Each deployment is cryptographically unique, utilizing RSA and RC4 encryption alongside timestomping techniques to evade signature-based detection. The attacker maintained persistence for 75 days before rapid deployment of multiple access paths, privilege escalation tools including BadPotato, SweetPotato, and EfsPotato, and establishment of dual notification channels through DNS and HTTP. The framework employs hex-encoded subdomain queries for self-reporting and automated builder-generated code with randomized variables. This represents the fourth China-linked cluster documented targeting legacy IIS infrast...",
+      "id": "report--1b19701e-2fde-4b6f-b420-5f65023047da",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-08T08:27:09.779Z",
+      "name": "Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--a2bf56c3-6077-4baf-ab81-429057e57ba5",
+        "indicator--19d9242d-27c8-4462-bb75-2eea5405caa2",
+        "indicator--41ec3d19-c075-485d-8a72-c5e5f43cbf34",
+        "indicator--b7492d31-f20c-4370-9c5f-c326869dfd75",
+        "indicator--a2bf56c3-6077-4baf-ab81-429057e57ba5",
+        "indicator--d631ea57-0c0c-4a6e-831b-6a4c217b0090",
+        "indicator--250eeaf1-2950-4c5c-a4b2-9451fc62451f",
+        "indicator--a00638f9-01ba-4771-ab6a-1fb354be88eb",
+        "threat-actor--d1f82b9c-5272-4768-bb48-7482d76c0a86"
+      ],
+      "published": "2026-06-05T18:07:51.399Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-05T18:07:51.399Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-05T18:07:51.399Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-05T18:07:52.000Z",
+      "description": "",
+      "id": "indicator--a2bf56c3-6077-4baf-ab81-429057e57ba5",
+      "labels": [],
+      "modified": "2026-06-05T18:07:52.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[ipv4-addr:value = '140.206.161.227']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-05T18:07:52.000Z",
+      "valid_until": "2026-07-05T18:00:00.000Z"
+    },
+    {
+      "created": "2026-06-05T18:07:52.000Z",
+      "description": "",
+      "id": "indicator--19d9242d-27c8-4462-bb75-2eea5405caa2",
+      "labels": [],
+      "modified": "2026-06-05T18:07:52.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[domain-name:value = 'hcgos.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-05T18:07:52.000Z"
+    },
+    {
+      "created": "2026-06-05T18:07:52.000Z",
+      "description": "",
+      "id": "indicator--41ec3d19-c075-485d-8a72-c5e5f43cbf34",
+      "labels": [],
+      "modified": "2026-06-05T18:07:52.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[domain-name:value = 'ashx.lhlsjcb.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-05T18:07:52.000Z"
+    },
+    {
+      "created": "2026-06-08T08:22:33.000Z",
+      "description": " / CC=HK ASN=AS132203 tencent building  kejizhongyi avenue",
+      "id": "indicator--b7492d31-f20c-4370-9c5f-c326869dfd75",
+      "labels": [],
+      "modified": "2026-06-08T08:22:33.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[ipv4-addr:value = '124.156.129.151']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:22:33.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:22:33.000Z",
+      "description": " / CC=CN ASN=AS140979 china unicom shanghai fute idc network",
+      "id": "indicator--a2bf56c3-6077-4baf-ab81-429057e57ba5",
+      "labels": [],
+      "modified": "2026-06-08T08:22:33.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[ipv4-addr:value = '140.206.161.227']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:22:33.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:22:33.000Z",
+      "description": " / CC=SG ASN=ASNone",
+      "id": "indicator--d631ea57-0c0c-4a6e-831b-6a4c217b0090",
+      "labels": [],
+      "modified": "2026-06-08T08:22:33.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[ipv4-addr:value = '43.160.202.246']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:22:33.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:22:33.000Z",
+      "description": "",
+      "id": "indicator--250eeaf1-2950-4c5c-a4b2-9451fc62451f",
+      "labels": [],
+      "modified": "2026-06-08T08:22:33.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[url:value = 'http://140.206.161.227:443']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:22:33.000Z"
+    },
+    {
+      "created": "2026-06-08T08:22:33.000Z",
+      "description": "",
+      "id": "indicator--a00638f9-01ba-4771-ab6a-1fb354be88eb",
+      "labels": [],
+      "modified": "2026-06-08T08:22:33.000Z",
+      "name": "OTX pulse_name=Agentic AI Uncovers New China-Linked Cluster OP-512",
+      "pattern": "[url:value = 'http://43.160.202.246:8053']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:22:33.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-05T18:07:51.399Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--d1f82b9c-5272-4768-bb48-7482d76c0a86",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-05T18:07:51.399Z",
+      "name": "OP-512",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

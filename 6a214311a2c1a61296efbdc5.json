@@ -1,0 +1,124 @@
+{
+  "id": "bundle--83f24d82-7a57-4cf0-955f-9feba8789a31",
+  "objects": [
+    {
+      "created": "2026-06-04T09:19:13.556Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "Microsoft Threat Intelligence discovered a large-scale npm supply chain attack compromising 32 malicious packages across over 90 versions under the @redhat-cloud-services scope. The compromise originated from the RedHatInsights/javascript-clients CI/CD pipeline, enabling attackers to publish trojanized packages through legitimate GitHub Actions OIDC workflows with authentic provenance signatures. The malicious packages executed a heavily obfuscated 4.29 MB dropper via npm preinstall hooks, which downloaded the Bun JavaScript runtime and launched payloads designed to harvest credentials from GitHub, npm, AWS, Azure, GCP, HashiCorp Vault, Kubernetes, and developer systems. The malware scraped GitHub Actions runner memory for secrets, escalated privileges using passwordless sudo, exfiltrated stolen data through GitHub infrastructure, and propagated by compromising additional maintainer packages with forged SLSA provenance. The campaign marker \"Miasma: The Spreading Blight\" was embedded throughout the malicious",
+      "id": "report--83f24d82-7a57-4cf0-955f-9feba8789a31",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-04T09:21:40.423Z",
+      "name": "Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--55911fee-6694-4a05-baeb-b95e5fbfe643",
+        "indicator--c1bfaa59-1adb-4a80-b68c-374970ca1200",
+        "indicator--7a00e50c-93fe-472d-9c72-fedea74ffe89",
+        "indicator--2a92c6fd-5dbf-4d44-868f-95eebb2171c9",
+        "indicator--a0f475fd-9ed4-4753-9a0c-a72dd3531e7c",
+        "indicator--f2669891-1a34-47ac-9a17-dd18e3d40822"
+      ],
+      "published": "2026-06-04T09:19:13.556Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-04T09:19:13.556Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-04T09:19:13.556Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-04T09:19:14.000Z",
+      "description": "",
+      "id": "indicator--55911fee-6694-4a05-baeb-b95e5fbfe643",
+      "labels": [],
+      "modified": "2026-06-04T09:19:14.000Z",
+      "name": "OTX pulse_name=Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "pattern": "[file:hashes.'SHA-256' = '25e121e3b7d300c0d0075b33e5eca39a3e6a659fb9cfee52b70ef71686628f1b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T09:19:14.000Z"
+    },
+    {
+      "created": "2026-06-04T09:19:14.000Z",
+      "description": "",
+      "id": "indicator--c1bfaa59-1adb-4a80-b68c-374970ca1200",
+      "labels": [],
+      "modified": "2026-06-04T09:19:14.000Z",
+      "name": "OTX pulse_name=Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "pattern": "[file:hashes.'SHA-256' = '396cac9e457ec54ff6d3f6311cb5cc1da8054d019ce3ffa1de5741506c7a4ea4']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T09:19:14.000Z"
+    },
+    {
+      "created": "2026-06-04T09:19:14.000Z",
+      "description": "",
+      "id": "indicator--7a00e50c-93fe-472d-9c72-fedea74ffe89",
+      "labels": [],
+      "modified": "2026-06-04T09:19:14.000Z",
+      "name": "OTX pulse_name=Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "pattern": "[file:hashes.'SHA-256' = 'd5a97614d5319ce9c8e01fa0b4eb06fb5b9e54fa13b23d718174a1546444123b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T09:19:14.000Z"
+    },
+    {
+      "created": "2026-06-04T09:19:14.000Z",
+      "description": "",
+      "id": "indicator--2a92c6fd-5dbf-4d44-868f-95eebb2171c9",
+      "labels": [],
+      "modified": "2026-06-04T09:19:14.000Z",
+      "name": "OTX pulse_name=Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "pattern": "[file:hashes.'SHA-256' = 'd8d170af3de17bb9b217c52aaaffdf9395f35ef015a57ef676e406c121e5e223']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T09:19:14.000Z"
+    },
+    {
+      "created": "2026-06-04T09:19:14.000Z",
+      "description": "",
+      "id": "indicator--a0f475fd-9ed4-4753-9a0c-a72dd3531e7c",
+      "labels": [],
+      "modified": "2026-06-04T09:19:14.000Z",
+      "name": "OTX pulse_name=Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "pattern": "[file:hashes.'SHA-256' = 'f0641e053e81f0d01fa46db35a83e0a34494886503086866d956d14e81fd3e1c']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T09:19:14.000Z"
+    },
+    {
+      "created": "2026-06-04T09:19:14.000Z",
+      "description": "",
+      "id": "indicator--f2669891-1a34-47ac-9a17-dd18e3d40822",
+      "labels": [],
+      "modified": "2026-06-04T09:19:14.000Z",
+      "name": "OTX pulse_name=Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+      "pattern": "[file:hashes.'SHA-256' = 'f88258e21592084a2f93a572ade8f9b91c0cd0e242f5cf6121ed7bad0f7bdd1f']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T09:19:14.000Z"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

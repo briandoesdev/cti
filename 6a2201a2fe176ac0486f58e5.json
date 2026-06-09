@@ -1,0 +1,189 @@
+{
+  "id": "bundle--a25c6ea3-211c-4de0-9dd5-1314551eed82",
+  "objects": [
+    {
+      "created": "2026-06-04T22:52:18.927Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "A new extortion group called Pink, tracked as cluster CL-CRI-1147, employs voice phishing and fake IT helpdesk impersonation to compromise organizations. The gang steals employee credentials, bypasses multi-factor authentication, and exfiltrates data from cloud storage platforms like SharePoint and OneDrive. Pink threatens to leak stolen information unless ransom demands are met, setting 72-hour deadlines. The group's data-leak site launched on May 31, 2026. This approach mirrors tactics popularized by Lapsus$, Scattered Spider, and ShinyHunters. Incident responders link Pink to The Com, a loosely connected network of English-speaking hackers and extortionists. Attackers use compromised victim accounts and internal Teams messages for extortion communications, reusing domains across multiple targets.",
+      "id": "report--a25c6ea3-211c-4de0-9dd5-1314551eed82",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-05T06:20:30.873Z",
+      "name": "Latest goon squad to use fake helpdesk calls to steal creds",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--849962da-b99c-4286-8c95-2aeb9578caa9",
+        "indicator--e190b913-ac91-43ad-b185-520a701abf14",
+        "indicator--47266576-eaf6-45c2-b910-9fbc2fc12f5f",
+        "indicator--030f8fdf-151a-4240-b294-9cae73d96ecc",
+        "indicator--410b6b75-e2a1-413b-95f5-3a48304e9416",
+        "threat-actor--039a574e-5b3b-4244-905e-653d89c69484"
+      ],
+      "published": "2026-06-04T22:52:18.927Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-04T22:52:18.927Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-04T22:52:18.927Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-04T22:52:19.000Z",
+      "description": "",
+      "id": "indicator--849962da-b99c-4286-8c95-2aeb9578caa9",
+      "labels": [],
+      "modified": "2026-06-04T22:52:19.000Z",
+      "name": "OTX pulse_name=Latest goon squad to use fake helpdesk calls to steal creds",
+      "pattern": "[ipv4-addr:value = '185.178.208.153']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T22:52:19.000Z",
+      "valid_until": "2026-07-04T22:00:00.000Z"
+    },
+    {
+      "created": "2026-06-04T22:52:19.000Z",
+      "description": "",
+      "id": "indicator--e190b913-ac91-43ad-b185-520a701abf14",
+      "labels": [],
+      "modified": "2026-06-04T22:52:19.000Z",
+      "name": "OTX pulse_name=Latest goon squad to use fake helpdesk calls to steal creds",
+      "pattern": "[ipv4-addr:value = '96.232.20.66']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T22:52:19.000Z",
+      "valid_until": "2026-07-04T22:00:00.000Z"
+    },
+    {
+      "created": "2026-06-04T22:52:19.000Z",
+      "description": "",
+      "id": "indicator--47266576-eaf6-45c2-b910-9fbc2fc12f5f",
+      "labels": [],
+      "modified": "2026-06-04T22:52:19.000Z",
+      "name": "OTX pulse_name=Latest goon squad to use fake helpdesk calls to steal creds",
+      "pattern": "[domain-name:value = 'deploypasskey.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T22:52:19.000Z"
+    },
+    {
+      "created": "2026-06-04T22:52:19.000Z",
+      "description": "",
+      "id": "indicator--030f8fdf-151a-4240-b294-9cae73d96ecc",
+      "labels": [],
+      "modified": "2026-06-04T22:52:19.000Z",
+      "name": "OTX pulse_name=Latest goon squad to use fake helpdesk calls to steal creds",
+      "pattern": "[domain-name:value = 'passkeyadd.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T22:52:19.000Z"
+    },
+    {
+      "created": "2026-06-04T22:52:19.000Z",
+      "description": "",
+      "id": "indicator--410b6b75-e2a1-413b-95f5-3a48304e9416",
+      "labels": [],
+      "modified": "2026-06-04T22:52:19.000Z",
+      "name": "OTX pulse_name=Latest goon squad to use fake helpdesk calls to steal creds",
+      "pattern": "[domain-name:value = 'passkeydeploy.com']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-04T22:52:19.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-04T22:52:18.927Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--039a574e-5b3b-4244-905e-653d89c69484",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-04T22:52:18.927Z",
+      "name": "Pink",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
