@@ -1,0 +1,193 @@
+{
+  "id": "bundle--a9205292-e3a4-402a-98fb-0297b774893f",
+  "objects": [
+    {
+      "created": "2026-06-05T17:40:45.363Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "An unidentified threat actor is actively exploiting CVE-2026-0257, an authentication bypass vulnerability in PAN-OS GlobalProtect portal and gateway components. The flaw allows unauthorized attackers to circumvent security controls and initiate VPN connections. The vulnerability was added to CISA's Known Exploited Vulnerabilities catalog on May 29, 2026. Exploitation activity has been detected targeting GlobalProtect, with a small portion of probed devices successfully establishing VPN sessions. No post-access behavior or lateral movement has been identified. Organizations are advised to hunt for indicators including specific IP addresses, suspicious host IDs, and MAC addresses. Palo Alto Networks recommends following security advisory guidance, implementing available workarounds, and upgrading to patched versions.",
+      "id": "report--a9205292-e3a4-402a-98fb-0297b774893f",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-08T08:36:29.254Z",
+      "name": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--8b8487ee-79ff-4734-8da7-7aff7d827df0",
+        "indicator--235344c9-5641-45b8-9d63-3ab10f941da8",
+        "indicator--bd3ca296-b74c-470b-8fb9-a10a323f907d",
+        "indicator--518b55a7-d5b4-4eb1-abb2-66ee8039bad8",
+        "indicator--7f3e8c11-2ccd-4dbd-89c7-1e2ae2fc656e",
+        "indicator--40ad28bf-7524-4334-84c4-e5633329479a",
+        "indicator--e3888366-0054-4c43-a7d9-3d1b78f2d69c",
+        "indicator--6b7ddf89-8262-4dae-8e7e-4d2efd244435",
+        "indicator--44d94ad9-ee5e-41bf-aa76-6a40e4866951",
+        "vulnerability--90158f35-1ed3-41d0-981d-8e8b1c83ee92"
+      ],
+      "published": "2026-06-05T17:40:45.363Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-05T17:40:45.363Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-05T17:40:45.363Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=US ASN=AS20473 the constant company  llc",
+      "id": "indicator--8b8487ee-79ff-4734-8da7-7aff7d827df0",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '104.207.144.154']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=US ASN=AS1239 sprint",
+      "id": "indicator--235344c9-5641-45b8-9d63-3ab10f941da8",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '146.19.216.119']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=US ASN=AS1239 sprint",
+      "id": "indicator--bd3ca296-b74c-470b-8fb9-a10a323f907d",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '146.19.216.120']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=US ASN=AS1239 sprint",
+      "id": "indicator--518b55a7-d5b4-4eb1-abb2-66ee8039bad8",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '146.19.216.125']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=CH ASN=AS51852 private layer inc",
+      "id": "indicator--7f3e8c11-2ccd-4dbd-89c7-1e2ae2fc656e",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '179.43.172.213']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=GB ASN=AS39351 31173 services ab",
+      "id": "indicator--40ad28bf-7524-4334-84c4-e5633329479a",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '185.195.232.139']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=US ASN=AS36352 colocrossing",
+      "id": "indicator--e3888366-0054-4c43-a7d9-3d1b78f2d69c",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '198.12.106.60']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=JP ASN=AS63916 iptelecom global",
+      "id": "indicator--6b7ddf89-8262-4dae-8e7e-4d2efd244435",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '202.144.192.47']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-08T08:35:52.000Z",
+      "description": " / CC=US ASN=ASNone",
+      "id": "indicator--44d94ad9-ee5e-41bf-aa76-6a40e4866951",
+      "labels": [],
+      "modified": "2026-06-08T08:35:52.000Z",
+      "name": "OTX pulse_name=Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "pattern": "[ipv4-addr:value = '23.128.228.6']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-08T08:35:52.000Z",
+      "valid_until": "2026-07-08T08:00:00.000Z"
+    },
+    {
+      "created": "2026-06-05T17:40:46.000Z",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-0257",
+          "source_name": "cve"
+        }
+      ],
+      "id": "vulnerability--90158f35-1ed3-41d0-981d-8e8b1c83ee92",
+      "modified": "2026-06-05T17:40:46.000Z",
+      "name": "CVE-2026-0257",
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
