@@ -1,0 +1,49 @@
+{
+  "id": "bundle--2f26d8b3-3796-4d4b-a0df-1b78ac22879f",
+  "objects": [
+    {
+      "created": "2026-06-09T06:14:59.732Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "A new post-exploitation red team tool named Splinter has been discovered on customer systems through Advanced WildFire's memory scanning capabilities. Developed in Rust programming language, Splinter is exceptionally large at around 7MB due to statically linked libraries. The tool uses a JSON configuration structure containing implant ID, C2 server details, and operational parameters. It operates through a task-based model with capabilities including Windows command execution, remote process injection, file upload/download, cloud service information gathering, and self-deletion. Communication with the C2 server occurs via HTTPS using specific URL paths for task synchronization, heartbeat connections, and file transfers. While not as sophisticated as Cobalt Strike, Splinter represents a growing variety of penetration testing tools that could potentially be misused by threat actors.",
+      "id": "report--2f26d8b3-3796-4d4b-a0df-1b78ac22879f",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-09T08:46:32.093Z",
+      "name": "A First Look at a New Post-Exploitation Red Team Tool",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--a6f7e96c-b28b-4ff7-9a9f-73cf81b65abe"
+      ],
+      "published": "2026-06-09T06:14:59.732Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-09T06:14:59.732Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-09T06:14:59.732Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-09T06:15:00.000Z",
+      "description": "",
+      "id": "indicator--a6f7e96c-b28b-4ff7-9a9f-73cf81b65abe",
+      "labels": [],
+      "modified": "2026-06-09T06:15:00.000Z",
+      "name": "OTX pulse_name=A First Look at a New Post-Exploitation Red Team Tool",
+      "pattern": "[file:hashes.'SHA-256' = '1962cef10cf737300d04a23139122abcc8e8803e54dfcb63054140fbe549bed0']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T06:15:00.000Z"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
