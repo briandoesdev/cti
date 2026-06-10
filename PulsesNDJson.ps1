@@ -1,0 +1,1 @@
+Get-ChildItem *.json | ForEach-Object { jq -c '.objects[]' $_.FullName } | Set-Content pulses.ndjson -Encoding utf8
