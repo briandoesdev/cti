@@ -1,0 +1,232 @@
+{
+  "id": "bundle--6765ed63-3c2b-4c93-8e9d-4c7d0072223f",
+  "objects": [
+    {
+      "created": "2026-06-10T11:58:42.962Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "The Gentlemen is a Ransomware-as-a-Service operation, tracked as Storm-2697, that emerged in mid-2025 after splitting from Qilin ransomware following a payment dispute. Operating as a highly structured syndicate with at least 9 core operators, the group has compromised over 1,570 organizations across 70+ countries, with approximately 71-78% paying ransoms and never appearing on public leak sites. The operation uses custom Go and C-compiled cross-platform lockers featuring partial encryption modes (0.3%-9% per file), built-in lateral movement via WMI and PowerShell remoting, aggressive defense evasion including Windows Defender disabling and event log clearing, and self-propagation capabilities. A formal partnership with BreachForums in May 2026 expanded distribution through integrated affiliate onboarding. Despite sophisticated encryption using X25519 key exchange and XChaCha20, a critical CWE-244 implementation flaw allows key recovery from process memory dumps.",
+      "id": "report--6765ed63-3c2b-4c93-8e9d-4c7d0072223f",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-10T13:44:10.922Z",
+      "name": "Ransomware Analysis: Go Binary and Fast Encryption",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--f80e0fe6-dab4-46cc-ad9c-4463ede80e39",
+        "indicator--62cae0ee-2425-4056-a41f-a41e4d3e8e27",
+        "indicator--809d8c08-0972-4e93-9f30-e0b582917333",
+        "indicator--858e0403-b8c5-4a56-8ce9-6fe2e88f938c",
+        "indicator--bedf7abd-688c-42c7-9407-acff3906d67d",
+        "indicator--1b14f12a-aa89-4007-9fc8-506ad1c12253",
+        "indicator--fba0d77d-5c65-4d0d-8903-70aabb8ad20c",
+        "threat-actor--8ff8e71f-573f-4453-8898-4daa49affb25",
+        "vulnerability--02d4ce58-03f9-424c-98f1-c01a9e3e5fa9"
+      ],
+      "published": "2026-06-10T11:58:42.962Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-10T11:58:42.962Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-10T11:58:42.962Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--f80e0fe6-dab4-46cc-ad9c-4463ede80e39",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[file:hashes.MD5 = '4200b46a93c6ab059e2b34ce200c4a5b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--62cae0ee-2425-4056-a41f-a41e4d3e8e27",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[file:hashes.MD5 = 'ead0d7a8ae0a6ffb7f0a5873fec4ff5e']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--809d8c08-0972-4e93-9f30-e0b582917333",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[file:hashes.'SHA-1' = '42bcc743c71a9ea083c1c750a398110582796762']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--858e0403-b8c5-4a56-8ce9-6fe2e88f938c",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[file:hashes.'SHA-256' = '3ab9575225e00a83a4ac2b534da5a710bdcf6eb72884944c437b5fbe5c5c9235']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--bedf7abd-688c-42c7-9407-acff3906d67d",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[url:value = 'http://tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion/']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--1b14f12a-aa89-4007-9fc8-506ad1c12253",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[file:hashes.'SHA-1' = '39bd9c888d3e8110c127ba60cc727d2538bf7da2']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "description": "",
+      "id": "indicator--fba0d77d-5c65-4d0d-8903-70aabb8ad20c",
+      "labels": [],
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "OTX pulse_name=Ransomware Analysis: Go Binary and Fast Encryption",
+      "pattern": "[domain-name:value = 'tezwsse5czllksjb7cwp65rvnk4oobmzti2znn42i43bjdfd2prqqkad.onion']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:44.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-10T11:58:42.962Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--8ff8e71f-573f-4453-8898-4daa49affb25",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-10T11:58:42.962Z",
+      "name": "The Gentlemen",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    },
+    {
+      "created": "2026-06-10T11:58:44.000Z",
+      "external_references": [
+        {
+          "external_id": "CVE-2024-55591",
+          "source_name": "cve"
+        }
+      ],
+      "id": "vulnerability--02d4ce58-03f9-424c-98f1-c01a9e3e5fa9",
+      "modified": "2026-06-10T11:58:44.000Z",
+      "name": "CVE-2024-55591",
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

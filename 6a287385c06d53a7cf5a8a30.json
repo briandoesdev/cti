@@ -1,0 +1,124 @@
+{
+  "id": "bundle--f181918b-8569-45e2-b565-489fd84677e4",
+  "objects": [
+    {
+      "created": "2026-06-09T20:11:49.185Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "Threat actors are exploiting short-form video platforms like TikTok and Instagram Reels to conduct social engineering attacks. Two distinct campaign methods have been identified: professional-looking fake tutorials with AI-generated voiceovers promising free premium software, and casual videos showcasing premium features to generate engagement through comments. Both approaches direct victims to malicious websites hosting infostealer malware, particularly Vidarstealer. The campaigns leverage platform algorithms through high engagement rates including saves, shares, and comments. Attackers use multiple accounts with Windows-themed branding and manipulate PowerShell commands to download malicious executables. These techniques are difficult to counter as creators can delete warning comments and platform reporting mechanisms prove ineffective. The attacks target non-technical users seeking free access to premium services like Spotify, Microsoft Office, and other software, making social media feeds an emerging p...",
+      "id": "report--f181918b-8569-45e2-b565-489fd84677e4",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-10T10:46:05.809Z",
+      "name": "Phishing Attacks Leverage TikTok, Instagram Reels",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--4baddca3-cfde-4a21-bbad-2e53653b044d",
+        "indicator--30cf01c2-c51b-4ca5-a29a-2e1b75db8e6a",
+        "indicator--2b5bc1c2-9351-41c2-a34e-1d5d0c437aaf",
+        "indicator--a01b2588-35a4-4f6a-ad34-827840bd62ca",
+        "indicator--9ef2134e-d1a4-45cd-8cd1-20acaa058476",
+        "indicator--0c8f161b-36e9-4d25-b53c-7e6314077482"
+      ],
+      "published": "2026-06-09T20:11:49.185Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-09T20:11:49.185Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-09T20:11:49.185Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-09T20:11:50.000Z",
+      "description": "",
+      "id": "indicator--4baddca3-cfde-4a21-bbad-2e53653b044d",
+      "labels": [],
+      "modified": "2026-06-09T20:11:50.000Z",
+      "name": "OTX pulse_name=Phishing Attacks Leverage TikTok, Instagram Reels",
+      "pattern": "[file:hashes.MD5 = 'b149948bf55a3313d8d355de6d663b7d']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T20:11:50.000Z"
+    },
+    {
+      "created": "2026-06-09T20:11:50.000Z",
+      "description": "",
+      "id": "indicator--30cf01c2-c51b-4ca5-a29a-2e1b75db8e6a",
+      "labels": [],
+      "modified": "2026-06-09T20:11:50.000Z",
+      "name": "OTX pulse_name=Phishing Attacks Leverage TikTok, Instagram Reels",
+      "pattern": "[file:hashes.'SHA-1' = '8cc4649a0f87a927d999ec352a65d88a0335a3cf']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T20:11:50.000Z"
+    },
+    {
+      "created": "2026-06-09T20:11:50.000Z",
+      "description": "",
+      "id": "indicator--2b5bc1c2-9351-41c2-a34e-1d5d0c437aaf",
+      "labels": [],
+      "modified": "2026-06-09T20:11:50.000Z",
+      "name": "OTX pulse_name=Phishing Attacks Leverage TikTok, Instagram Reels",
+      "pattern": "[file:hashes.'SHA-256' = '03bbc4fa1fd784276da135ab62fef85aaddea66e6eb176d7e59c3398f818b153']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T20:11:50.000Z"
+    },
+    {
+      "created": "2026-06-09T20:11:50.000Z",
+      "description": "",
+      "id": "indicator--a01b2588-35a4-4f6a-ad34-827840bd62ca",
+      "labels": [],
+      "modified": "2026-06-09T20:11:50.000Z",
+      "name": "OTX pulse_name=Phishing Attacks Leverage TikTok, Instagram Reels",
+      "pattern": "[domain-name:value = 'd4ug.site']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T20:11:50.000Z"
+    },
+    {
+      "created": "2026-06-09T20:11:50.000Z",
+      "description": "",
+      "id": "indicator--9ef2134e-d1a4-45cd-8cd1-20acaa058476",
+      "labels": [],
+      "modified": "2026-06-09T20:11:50.000Z",
+      "name": "OTX pulse_name=Phishing Attacks Leverage TikTok, Instagram Reels",
+      "pattern": "[domain-name:value = 'maxapk.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T20:11:50.000Z"
+    },
+    {
+      "created": "2026-06-09T20:11:50.000Z",
+      "description": "",
+      "id": "indicator--0c8f161b-36e9-4d25-b53c-7e6314077482",
+      "labels": [],
+      "modified": "2026-06-09T20:11:50.000Z",
+      "name": "OTX pulse_name=Phishing Attacks Leverage TikTok, Instagram Reels",
+      "pattern": "[domain-name:value = 'pluginchad.xyz']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T20:11:50.000Z"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

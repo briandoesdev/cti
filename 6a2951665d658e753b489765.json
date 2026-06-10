@@ -1,0 +1,188 @@
+{
+  "id": "bundle--314cbd41-11e1-47ac-a351-0195a26e2e3a",
+  "objects": [
+    {
+      "created": "2026-06-10T11:58:30.228Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "SilabRAT is an advanced Remote Access Trojan offered as Malware-as-a-Service on Darkweb forums since late 2025, developed by threat actor o1oo1 and sold for $5,000 monthly. This financially-motivated tool focuses on credential theft and cryptocurrency operations, featuring Hidden Virtual Network Computing for invisible remote control, browser profile cloning to bypass session protections, and automated cryptocurrency wallet password cracking. The RAT bypasses Chrome App-Bound Encryption, performs session hijacking, and includes keylogging, clipboard monitoring, and remote desktop capabilities. Distributed through phishing and ClickFix campaigns with operator-hosted infrastructure, SilabRAT uses ChaCha20-Poly1305 encryption for command-and-control communications. The developer also offers AsmCrypt, a companion crypter service, creating a complete malware bundle from evasion to execution and remote control.",
+      "id": "report--314cbd41-11e1-47ac-a351-0195a26e2e3a",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-10T13:45:08.713Z",
+      "name": "SilabRAT, What's Your Power?",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--9b9ec6af-b248-47ba-8889-7ea3f53736a6",
+        "indicator--8f5a24a9-7695-4d14-bc4e-af581937549a",
+        "indicator--3c48a4d8-d0cb-4f57-a577-e8c7c9b7dd8f",
+        "indicator--c254e343-f922-4ee4-8ded-3431dd6d7a3b",
+        "indicator--796effc5-bc39-422a-ae5b-4e6b8a2fd083",
+        "threat-actor--41da7c21-56ec-4ff5-85e0-bfab71b013f7"
+      ],
+      "published": "2026-06-10T11:58:30.228Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-10T11:58:30.228Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-10T11:58:30.228Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-10T11:58:31.000Z",
+      "description": "",
+      "id": "indicator--9b9ec6af-b248-47ba-8889-7ea3f53736a6",
+      "labels": [],
+      "modified": "2026-06-10T11:58:31.000Z",
+      "name": "OTX pulse_name=SilabRAT, What's Your Power?",
+      "pattern": "[file:hashes.'SHA-256' = '3a6adbe0081b2488e0f137496e92591e0c29148154b2d99faadab9cc435b879b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:31.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:31.000Z",
+      "description": "",
+      "id": "indicator--8f5a24a9-7695-4d14-bc4e-af581937549a",
+      "labels": [],
+      "modified": "2026-06-10T11:58:31.000Z",
+      "name": "OTX pulse_name=SilabRAT, What's Your Power?",
+      "pattern": "[file:hashes.'SHA-256' = '79f8da9f9fb4ac7c16d9c210f1f6ef418357a3e7bf602b1dd03a490596fa58c5']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:31.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:31.000Z",
+      "description": "",
+      "id": "indicator--3c48a4d8-d0cb-4f57-a577-e8c7c9b7dd8f",
+      "labels": [],
+      "modified": "2026-06-10T11:58:31.000Z",
+      "name": "OTX pulse_name=SilabRAT, What's Your Power?",
+      "pattern": "[file:hashes.'SHA-256' = 'fb56e66920c84ef9e51db0ea23144f5755daef97cbff8613b05ab56d0dc9d623']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:31.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:31.000Z",
+      "description": "",
+      "id": "indicator--c254e343-f922-4ee4-8ded-3431dd6d7a3b",
+      "labels": [],
+      "modified": "2026-06-10T11:58:31.000Z",
+      "name": "OTX pulse_name=SilabRAT, What's Your Power?",
+      "pattern": "[file:hashes.'SHA-256' = 'fbce30a0c852972fdc24f1b6a7c270512a50ef1a7c6c88c88b92a2dcbdfdd023']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:31.000Z"
+    },
+    {
+      "created": "2026-06-10T11:58:31.000Z",
+      "description": "",
+      "id": "indicator--796effc5-bc39-422a-ae5b-4e6b8a2fd083",
+      "labels": [],
+      "modified": "2026-06-10T11:58:31.000Z",
+      "name": "OTX pulse_name=SilabRAT, What's Your Power?",
+      "pattern": "[ipv4-addr:value = '91.199.163.124']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T11:58:31.000Z",
+      "valid_until": "2026-07-10T11:00:00.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-10T11:58:30.228Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--41da7c21-56ec-4ff5-85e0-bfab71b013f7",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-10T11:58:30.228Z",
+      "name": "o1oo1",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}

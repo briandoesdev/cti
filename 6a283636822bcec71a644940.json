@@ -1,0 +1,284 @@
+{
+  "id": "bundle--cc9f3b0c-5d33-4f19-bc45-1670ee04c7d7",
+  "objects": [
+    {
+      "created": "2026-06-09T15:50:14.862Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "A critical authentication bypass vulnerability affecting Remote Access VPN and Mobile Access deployments has been actively exploited in the wild. The vulnerability exploits a logic flaw in certificate validation within the deprecated IKEv1 key exchange protocol, allowing attackers to establish VPN sessions without valid passwords. Exploitation has been observed since May 7, 2026, targeting several dozen organizations globally. One confirmed incident involved post-compromise activity linked to Qilin ransomware operations. The threat actor appears financially motivated and operates dedicated VPS infrastructure across multiple hosting providers. An additional related vulnerability affecting site-to-site VPN communications was discovered through AI-assisted code analysis, though no active exploitation has been observed. Immediate patching is strongly recommended for affected systems using IKEv1 protocol.",
+      "id": "report--cc9f3b0c-5d33-4f19-bc45-1670ee04c7d7",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-10T10:41:23.012Z",
+      "name": "Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--d2b6773e-bb5c-425c-853e-d580a75513f9",
+        "indicator--e0ae4973-ebc7-48d0-aa87-25d944d7ad6d",
+        "indicator--7f3e328a-4c47-4b49-8478-425bed51b643",
+        "indicator--120bac81-0299-4702-b837-51800409cfcd",
+        "indicator--7406b15b-4be5-43a9-8089-bdbcfb75b501",
+        "indicator--2c504681-6b38-4dbb-b9b5-57b7eed41de2",
+        "indicator--cd810647-2a77-4107-bfe9-fcad8bb621b5",
+        "indicator--02131329-3517-498f-9a48-16c4af9c4b73",
+        "indicator--dd599c82-8df6-4bd5-b40b-035af95f3c53",
+        "threat-actor--3b2df935-ba24-469e-92cf-0030e14e61a1",
+        "vulnerability--cb41f1bb-8b91-4680-8ecb-a15095a7d34c",
+        "vulnerability--082c692d-fa24-45ac-815d-0079c3321679"
+      ],
+      "published": "2026-06-09T15:50:14.862Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-09T15:50:14.862Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-09T15:50:14.862Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--d2b6773e-bb5c-425c-853e-d580a75513f9",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[file:hashes.MD5 = '51d39aa39478beeac94f2d12f682ecce']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--e0ae4973-ebc7-48d0-aa87-25d944d7ad6d",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[file:hashes.MD5 = '52fda5c1b9704544f32ee98d9060e689']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--7f3e328a-4c47-4b49-8478-425bed51b643",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '144.208.127.155']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--120bac81-0299-4702-b837-51800409cfcd",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '162.33.177.101']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--7406b15b-4be5-43a9-8089-bdbcfb75b501",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '209.182.225.136']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--2c504681-6b38-4dbb-b9b5-57b7eed41de2",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '38.54.107.167']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--cd810647-2a77-4107-bfe9-fcad8bb621b5",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '38.54.88.201']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--02131329-3517-498f-9a48-16c4af9c4b73",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '38.60.157.139']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "description": "",
+      "id": "indicator--dd599c82-8df6-4bd5-b40b-035af95f3c53",
+      "labels": [],
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "OTX pulse_name=Active Exploitation of Check Point VPN Authentication Bypass (CVE-2026-50751)",
+      "pattern": "[ipv4-addr:value = '45.61.136.173']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-09T15:50:15.000Z",
+      "valid_until": "2026-07-09T15:00:00.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-09T15:50:14.862Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--3b2df935-ba24-469e-92cf-0030e14e61a1",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-09T15:50:14.862Z",
+      "name": "Qilin",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-50751",
+          "source_name": "cve"
+        }
+      ],
+      "id": "vulnerability--cb41f1bb-8b91-4680-8ecb-a15095a7d34c",
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "CVE-2026-50751",
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    },
+    {
+      "created": "2026-06-09T15:50:15.000Z",
+      "external_references": [
+        {
+          "external_id": "CVE-2026-50752",
+          "source_name": "cve"
+        }
+      ],
+      "id": "vulnerability--082c692d-fa24-45ac-815d-0079c3321679",
+      "modified": "2026-06-09T15:50:15.000Z",
+      "name": "CVE-2026-50752",
+      "spec_version": "2.1",
+      "type": "vulnerability"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
