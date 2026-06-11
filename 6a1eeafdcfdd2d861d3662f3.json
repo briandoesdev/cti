@@ -1,0 +1,187 @@
+{
+  "id": "bundle--c14ba0fc-e454-423e-a780-288554f273bf",
+  "objects": [
+    {
+      "created": "2026-06-02T14:38:53.591Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "Iran's Ministry of Intelligence has broadened its Handala brand beyond cyber operations to include physical threats and influence campaigns targeting US and Israeli interests. The expansion encompasses multiple personas: Handala Popular Resistance Front claiming physical attacks inside Israel, VIPEmployment recruiting proxies globally for espionage and sabotage, and MOISIRAN conducting surveillance operations. These entities engage in coordinated amplification across platforms, soliciting individuals to conduct attacks for financial rewards. The consolidation creates a multi-domain threat combining hacktivist activities with physical operations, espionage recruitment, and influence campaigns. This approach leverages Handala Hack Team's recognition to amplify recruitment efforts while increasing risks to law enforcement, military, intelligence personnel, and critical infrastructure across targeted regions.",
+      "id": "report--c14ba0fc-e454-423e-a780-288554f273bf",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-03T09:27:35.542Z",
+      "name": "Iran Expands Handala Brand to Physical Threats",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--0ecf513b-b9e3-4647-8b78-d89eb97a1816",
+        "indicator--b462e3b7-5e7d-4d98-8192-ae0eeabfe62b",
+        "indicator--8569dea2-74ce-46aa-9ea6-64ca75d8a386",
+        "indicator--f1f449a1-060c-491c-b960-8816b0a9e67b",
+        "indicator--cb6f7ed7-9a6f-4921-b159-9ae0fbd8b038",
+        "threat-actor--185e248c-56b9-455d-9f0c-4916fdcaed7e"
+      ],
+      "published": "2026-06-02T14:38:53.591Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-02T14:38:53.591Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-02T14:38:53.591Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-02T14:38:54.000Z",
+      "description": "",
+      "id": "indicator--0ecf513b-b9e3-4647-8b78-d89eb97a1816",
+      "labels": [],
+      "modified": "2026-06-02T14:38:54.000Z",
+      "name": "OTX pulse_name=Iran Expands Handala Brand to Physical Threats",
+      "pattern": "[domain-name:value = 'handala-hack.tw']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-02T14:38:54.000Z"
+    },
+    {
+      "created": "2026-06-02T14:38:54.000Z",
+      "description": "",
+      "id": "indicator--b462e3b7-5e7d-4d98-8192-ae0eeabfe62b",
+      "labels": [],
+      "modified": "2026-06-02T14:38:54.000Z",
+      "name": "OTX pulse_name=Iran Expands Handala Brand to Physical Threats",
+      "pattern": "[domain-name:value = 'handala.red']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-02T14:38:54.000Z"
+    },
+    {
+      "created": "2026-06-02T14:38:54.000Z",
+      "description": "",
+      "id": "indicator--8569dea2-74ce-46aa-9ea6-64ca75d8a386",
+      "labels": [],
+      "modified": "2026-06-02T14:38:54.000Z",
+      "name": "OTX pulse_name=Iran Expands Handala Brand to Physical Threats",
+      "pattern": "[domain-name:value = 'justicehomeland.info']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-02T14:38:54.000Z"
+    },
+    {
+      "created": "2026-06-02T14:38:54.000Z",
+      "description": "",
+      "id": "indicator--f1f449a1-060c-491c-b960-8816b0a9e67b",
+      "labels": [],
+      "modified": "2026-06-02T14:38:54.000Z",
+      "name": "OTX pulse_name=Iran Expands Handala Brand to Physical Threats",
+      "pattern": "[domain-name:value = 'justicehomeland.org']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-02T14:38:54.000Z"
+    },
+    {
+      "created": "2026-06-02T14:38:54.000Z",
+      "description": "",
+      "id": "indicator--cb6f7ed7-9a6f-4921-b159-9ae0fbd8b038",
+      "labels": [],
+      "modified": "2026-06-02T14:38:54.000Z",
+      "name": "OTX pulse_name=Iran Expands Handala Brand to Physical Threats",
+      "pattern": "[domain-name:value = 'justicehomeland.ru']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-02T14:38:54.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-02T14:38:53.591Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--185e248c-56b9-455d-9f0c-4916fdcaed7e",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-02T14:38:53.591Z",
+      "name": "Void Manticore",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
