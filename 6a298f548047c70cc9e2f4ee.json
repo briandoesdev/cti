@@ -1,0 +1,64 @@
+{
+  "id": "bundle--fe5caef1-1f73-4457-9f91-b9e4741fdcb5",
+  "objects": [
+    {
+      "created": "2026-06-10T16:22:44.275Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "Threat actors are leveraging TikTok and Instagram Reels to distribute the Vidar infostealer through fake software tutorials. Two distinct campaigns use short-form videos disguised as tutorials for unlocking premium software like Spotify. The first campaign uses accounts mimicking official Windows profiles with AI-voiced clips instructing users to run PowerShell commands that download Vidar from lookalike domains. One video achieved over 100,000 views. The second campaign uses ordinary accounts posting music-backed clips that bait users in comments to receive malicious links via direct message. These campaigns exploit platform recommendation algorithms by encouraging saves and shares. Vidar is sold as a service for $300 lifetime license and harvests credentials, financial data and authentication tokens.",
+      "id": "report--fe5caef1-1f73-4457-9f91-b9e4741fdcb5",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-11T07:37:24.272Z",
+      "name": "Fake Software Tutorials on TikTok Spread Vidar Stealer",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--a01b2588-35a4-4f6a-ad34-827840bd62ca",
+        "indicator--a2f28935-d885-4b8d-b834-40c6fa897298"
+      ],
+      "published": "2026-06-10T16:22:44.275Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-10T16:22:44.275Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-10T16:22:44.275Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-10T16:22:45.000Z",
+      "description": "",
+      "id": "indicator--a01b2588-35a4-4f6a-ad34-827840bd62ca",
+      "labels": [],
+      "modified": "2026-06-10T16:22:45.000Z",
+      "name": "OTX pulse_name=Fake Software Tutorials on TikTok Spread Vidar Stealer",
+      "pattern": "[domain-name:value = 'd4ug.site']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T16:22:45.000Z"
+    },
+    {
+      "created": "2026-06-10T16:22:45.000Z",
+      "description": "",
+      "id": "indicator--a2f28935-d885-4b8d-b834-40c6fa897298",
+      "labels": [],
+      "modified": "2026-06-10T16:22:45.000Z",
+      "name": "OTX pulse_name=Fake Software Tutorials on TikTok Spread Vidar Stealer",
+      "pattern": "[domain-name:value = 'msget.run']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-10T16:22:45.000Z"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
