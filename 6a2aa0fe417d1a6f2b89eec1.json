@@ -1,0 +1,263 @@
+{
+  "id": "bundle--1736df17-14d0-45a6-b600-4fa5f603d0fe",
+  "objects": [
+    {
+      "created": "2026-06-11T11:50:22.807Z",
+      "created_by_ref": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "description": "Acronis Threat Research Unit identified two espionage campaigns targeting Cambodian government entities in defense and public works sectors, attributed to a cluster tracked as Khmer Shadow. Both campaigns delivered a custom C++ loader named NIGHTFORGE through government-themed lures in self-extracting archives. NIGHTFORGE employs sophisticated evasion techniques including NTDLL unhooking and Hell's Gate syscall resolution to decrypt and execute a Havoc Demon payload in memory. The loader utilizes DLL sideloading through a legitimate VMware-signed binary (VMwareNamespaceCmd.exe) and establishes persistence via COM-based scheduled tasks. Despite advanced technical capabilities, the actor demonstrated poor operational security by reusing identical payloads and infrastructure across targets. The campaigns targeted Cambodia's Information Collection Bureau and Ministry of Public Works and Transport using meeting-themed social engineering lures.",
+      "id": "report--1736df17-14d0-45a6-b600-4fa5f603d0fe",
+      "labels": [
+        "threat-report"
+      ],
+      "modified": "2026-06-11T14:41:08.187Z",
+      "name": "Targeted espionage against Cambodian government entities",
+      "object_refs": [
+        "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+        "indicator--88f68a9d-d0cf-46c9-b388-f22f5ee88ec7",
+        "indicator--4cbd2dc6-05b3-4123-b143-a46baee4b954",
+        "indicator--64c98304-6964-46a0-b64b-6d9399e4b543",
+        "indicator--7858ba40-9466-4b1e-9873-ccb16c32b399",
+        "indicator--cea3f68a-05cf-45c6-a8e7-698f3bbf070f",
+        "indicator--0910a38f-b858-4a6b-9ccd-2bcc83daabfd",
+        "indicator--177aa26b-0d46-4146-b736-1cb857523613",
+        "indicator--3ff63fa4-8fcb-4ac4-8168-c6d3542b1e9c",
+        "indicator--4ca4c831-68fd-402d-ae12-928c14088268",
+        "indicator--c55f4125-ad8c-4a69-9d6f-25d49817e8ac",
+        "threat-actor--7316191b-389e-473e-94ba-2874af686e3e"
+      ],
+      "published": "2026-06-11T11:50:22.807Z",
+      "spec_version": "2.1",
+      "type": "report"
+    },
+    {
+      "contact_information": "https://otx.alienvault.com/",
+      "created": "2026-06-11T11:50:22.807Z",
+      "id": "identity--ab072f15-9b87-4ee1-898f-b584d41f29b0",
+      "identity_class": "organization",
+      "modified": "2026-06-11T11:50:22.807Z",
+      "name": "Open Threat Exchange",
+      "spec_version": "2.1",
+      "type": "identity"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--88f68a9d-d0cf-46c9-b388-f22f5ee88ec7",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[file:hashes.MD5 = '03e7a4065df354a99add76e8ba7dd37b']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--4cbd2dc6-05b3-4123-b143-a46baee4b954",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[file:hashes.'SHA-1' = '04e7a98fb3b7738cca42557c3e2d9906d04fa2f6']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--64c98304-6964-46a0-b64b-6d9399e4b543",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[file:hashes.'SHA-256' = '15278c52f4e0d8b5bbfe288a5e826ab2ebeaedb7fb85572940cf1263e384761f']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--7858ba40-9466-4b1e-9873-ccb16c32b399",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[file:hashes.'SHA-256' = '1852120a84a328edd1995e633dfd2009867898a8e3f0b385e2490cf21c77a994']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--cea3f68a-05cf-45c6-a8e7-698f3bbf070f",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[file:hashes.'SHA-256' = '90bbfa9e7af176b85d110f4f1789cae6777fcb60813b047133c8f12caa344a17']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--0910a38f-b858-4a6b-9ccd-2bcc83daabfd",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[file:hashes.'SHA-256' = 'b3e853eee14fb7948c6907888ee07139085ba9af4231c30e97ff6236b86ca024']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--177aa26b-0d46-4146-b736-1cb857523613",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[ipv4-addr:value = '193.169.240.38']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z",
+      "valid_until": "2026-07-11T11:00:00.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--3ff63fa4-8fcb-4ac4-8168-c6d3542b1e9c",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[domain-name:value = 'linkednewsapi.top']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--4ca4c831-68fd-402d-ae12-928c14088268",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[domain-name:value = 'sharingfile.cloud']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "created": "2026-06-11T11:50:23.000Z",
+      "description": "",
+      "id": "indicator--c55f4125-ad8c-4a69-9d6f-25d49817e8ac",
+      "labels": [],
+      "modified": "2026-06-11T11:50:23.000Z",
+      "name": "OTX pulse_name=Targeted espionage against Cambodian government entities",
+      "pattern": "[domain-name:value = 'www.sharingfile.cloud']",
+      "pattern_type": "stix",
+      "pattern_version": "2.1",
+      "spec_version": "2.1",
+      "type": "indicator",
+      "valid_from": "2026-06-11T11:50:23.000Z"
+    },
+    {
+      "aliases": [
+        "Comment Panda",
+        "PLA Unit 61398",
+        "APT 1",
+        "APT1",
+        "Advanced Persistent Threat 1",
+        "Byzantine Candor",
+        "Group 3",
+        "TG-8223",
+        "Comment Group",
+        "Brown Fox",
+        "GIF89a",
+        "ShadyRAT",
+        "Shanghai Group"
+      ],
+      "created": "2026-06-11T11:50:22.807Z",
+      "description": [
+        "PLA Unit 61398 (Chinese: 61398\u90e8\u961f, Pinyin: 61398 b\u00f9du\u00ec) is the Military Unit Cover Designator (MUCD)[1] of a People's Liberation Army advanced persistent threat unit that has been alleged to be a source of Chinese computer hacking attacks"
+      ],
+      "external_references": [
+        [
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "http://intelreport.mandiant.com/Mandiant_APT1_Report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.cfr.org/interactive/cyber-operations/pla-unit-61398"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-siesta-campaign-a-new-targeted-attack-awakens/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.fireeye.com/blog/threat-research/2014/03/a-detailed-examination-of-the-siesta-campaign.html"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-oceansalt-delivers-wave-after-wave/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=f1265df5-6e5e-4fcc-9828-d4ddbbafd3d7&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://attack.mitre.org/groups/G0006/"
+          },
+          {
+            "source_name": "MISP Threat Actor list",
+            "url": "https://www.nytimes.com/2014/05/20/us/us-to-charge-chinese-workers-with-cyberspying.html"
+          }
+        ]
+      ],
+      "id": "threat-actor--7316191b-389e-473e-94ba-2874af686e3e",
+      "labels": [
+        "activist"
+      ],
+      "modified": "2026-06-11T11:50:22.807Z",
+      "name": "Khmer Shadow",
+      "spec_version": "2.1",
+      "type": "threat-actor"
+    }
+  ],
+  "spec_version": "2.1",
+  "type": "bundle"
+}
